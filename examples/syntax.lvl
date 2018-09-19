@@ -1,0 +1,155 @@
+# Syntax
+
+Examples of lvlup syntax
+
+## Headers
+
+```
+# Section Header
+## Section Subheader
+### Many Layers of Headers
+###### Up to H6
+```
+
+Alternatively
+
+```
+Section Header
+==============
+
+Section Subheader
+-----------------
+```
+
+## Emphasis
+
+```
+_underline_
+*italics*
+**bold**
+~~strike-through~~
+```
+
+## Paragraphs
+
+```
+Separate paragraphs separated by an empty line
+
+Otherwise if separated by no line
+Just starts on a new line but in the same paragraph
+```
+
+## Levels
+
+```
+Text at null level
+  : Text at level one
+  :
+    Blocked text still at level one (indentation here nests)
+  :: Text at level two
+    :: Still text at level two (indentation here does nothing)
+```
+
+## Grids
+
+Not to be confused with tables, these don't have lines.
+TODO: this syntax is still a WIP
+
+```
+{:2
+This is a grid with two columns  |   "Cells" or blocks are separated by bars |
+Rows are automatically generated |
+}
+```
+
+## Event Blocks
+
+When an element is hovered or selected, different images or text are triggered in a specific blocked place.
+
+```
+* When you [hover][1@block] over that word, the block's content changes.
+* You can set up a [default][!2@block] that's blocked when nothing is hovered
+
+[#block]
+
+This paragraph is below the block with dynamically triggered content. The content could even be an image.
+
+[1]: If you click on "hover", this text will remain displayed even when not hovering
+[2]: I'm the default text at the block
+```
+
+## Footnotes
+
+```
+Generic text[^1]
+
+[^1]: Text in footnote
+```
+
+## Links
+
+```
+Inline [link](https://website.com/)
+Referenced [link][can have names]
+
+[can have names]: https://anotherwebsite.com/
+```
+
+## Lists
+
+```
+- A bulleted list
+  - A sub item
+* Still a bulleted list
+  * So versatile
+
+1. A numbered list
+#. Another list item
+```
+
+## Tables
+
+```
++--------+--------+--------------+
+| Head 1 | Head 2 | Head 3       |
++========+========+==============+
+| Body   | Spanning body cell    |
++--------+-----------------------+
+```
+
+## Code
+
+```
+`monospace` or three back-ticks to declare start/end of a block of code
+```
+
+## Block Quotes
+
+```
+> Blocked quote
+>
+  Also a blocked quote
+```
+
+## Pictures
+
+```
+![img title text](/path/to/img)
+![can also use refs][pic]
+
+[pic]: /path/to/img
+```
+
+## Comments
+
+```
+//- Comments are not rendered
+```
+
+## Escaping
+
+TODO: still not sure about this
+
+```
+\[ escapes brackets and other key characters in lvlup \]
+```

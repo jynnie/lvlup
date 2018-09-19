@@ -1,0 +1,10 @@
+# lvlup
+
+lvlup (pronounced "level up") is a custom mark-_up_ language structured around _levels_ of details and based off markdown. the name (and file extension `.lvl`) are still tentatively named such.
+  : the idea behind lvlup is the concept of skimming. many people like to read perhaps just the first sentence of a paragraph or are really only interested at a surface level. lvlup is designed for those who write with this in mind.
+  : when parsed, lvlup generates html pages with options to auto-show a certain level of detail/depth. further details can be explored by
+    :: for example, this is tertiary-level content. of course, this structure of levels for detail doesn't necessarily need to be followed. you can just use level structure for other purposes.
+    :: i considered making levels indentation-sensitive, but for now, they're just declared by the number of colons used to declare a level.
+
+included in this are _examples_ of notes/files written in lvlup and src for a site that parses lvlup into html.
+: goals of the parsing site include allowing users to add their own CSS styles.
