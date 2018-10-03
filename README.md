@@ -1,6 +1,6 @@
 # lvlup
 
-lvlup (pronounced "level up") is a custom mark-_up_ language structured around _levels_ of details and based off markdown. the name (and file extension `.lvl`) are still tentatively named such.
+lvlup (pronounced "level up") is a custom mark-_up_ language structured around _levels_ of details. the name (and file extension `.lvl`) are still tentatively named such.
 
 lvlup blends Markdown and ReST syntax for a human readable, lightweight markup language with more structure.
 

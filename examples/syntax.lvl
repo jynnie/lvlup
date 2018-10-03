@@ -91,6 +91,7 @@ Generic text[^1]
 ```
 Inline [link](https://website.com/)
 Referenced [link][can have names]
+Reference the [doc](@header)
 
 [can have names]: https://anotherwebsite.com/
 ```
@@ -126,9 +127,9 @@ Referenced [link][can have names]
 ## Block Quotes
 
 ```
-> Blocked quote
->
-  Also a blocked quote
+.. Blocked quote
+..
+  Also a blocked quote 
 ```
 
 ## Pictures
